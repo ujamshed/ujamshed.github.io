@@ -110,14 +110,14 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "University of California Berkeley",
+      schoolName: "University of California, Berkeley",
       logo: require("./assets/images/berkeley.png"),
       subHeader: "Master of Molecular Science and Software Engineering",
       duration: "September 2021 - May 2023",
     },
     {
       schoolName: "McMaster University",
-      logo: require("./assets/images/mcmaster.png"),
+      logo: require("./assets/images/mcmaster.jpeg"),
       subHeader: "Bachelor of Health Science: Biology and Pharmacology CO-OP",
       duration: "September 2016 - April 2021",
     }
@@ -176,7 +176,7 @@ const workExperiences = {
     {
       role: "Junior Full Stack Developer",
       company: "McMaster University & ECCC",
-      companylogo: require("./assets/images/mcmaster.png"),
+      companylogo: require("./assets/images/mcmaster.jpeg"),
       date: "May 2020 – Dec 2021",
       desc: "Collaboration between McMaster University & Environment and Climate Change Canada",
       descBullets: [
