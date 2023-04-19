@@ -8,7 +8,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 // Splash Screen
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: false, // set false to disable splash screen
   animation: splashAnimation,
   duration: 2000 // Set animation duration as per your animation
 };
@@ -23,10 +23,10 @@ const greeting = {
   username: "Usman Jamshed",
   title: "Hi, I'm Usman",
   subTitle: emoji(
-    "A passionate Software Developer 🚀 with experience building Scientific Software and Web Applications."
+    "A passionate Software Developer 🚀 with experience building Scientific Software 🧬 and Web Applications ⚙️."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1yQR53JlHXYZ4Oo9IbnvZNbNObxquRQ6n/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -151,29 +151,52 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Computational Science CO-OP",
+      company: "Moderna",
+      companylogo: require("./assets/images/moderna.jpg"),
+      date: "Jan 2023 – Present",
+      desc: "Molecular Engineering and Modelling",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Creating software for wet-lab research teams to increase throughput and efficiency.",
+        "In-silico humanization of antibodies.",
+        "End-to-end protein re-engineering featuring ddG scan.",
+        "Containerized and integrated developed software onto a lab data platform utilizing AWS infrastructure, decreasing workflow time by 70%"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Scientific Informatics Analyst",
+      company: "Accenture",
+      companylogo: require("./assets/images/accenture.png"),
+      date: "Jan 2022 – Dec 2022",
+      descBullets: [
+        "Laboratory informatics management systems software developer working with proprietary languages and SQL in an agile fashion.",
+        "Created python scripts for automating workflows and standardizing data ingestion using AWS Lambda and DynamoDB."
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Junior Full Stack Developer",
+      company: "McMaster University & ECCC",
+      companylogo: require("./assets/images/mcmaster.png"),
+      date: "May 2020 – Dec 2021",
+      desc: "Collaboration between McMaster University & Environment and Climate Change Canada",
+      descBullets: [
+        "Developed a website to host animal data collected by hunters/trappers in Alberta to give more information about the traplines to stakeholders using the LAMP (Linux, Apache, MySQL and PHP) stack, JS, HTML and CSS3.",
+        "Used Vega-Lite to visualize different graphs to display data collected from the animals (elemental analysis, rodenticide presence, land use, etc.)",
+        "Created an interactive leaflet map of all traplines with data.",
+        "Has 50 monthly users."
+      ]
+    },
+    {
+      role: "MRL Vaccine Bio-Process Research and Development CO-OP",
+      company: "Merck & Co., Inc.",
+      companylogo: require("./assets/images/merck.gif"),
+      date: "May 2019 – Dec 2019",
+      desc: "Downstream Vaccine Conjugation",
+      descBullets: [
+        "Performing independent experiments for the optimization of chemical conjugation of polysaccharides to proteins to create a vaccine conjugate as part of downstream process development.",
+        "Using analytical tools such as HPSEC to analyze the properties of the conjugates.",
+        "Presenting results at group meetings, departmental meetings, and companywide symposiums."
+      ]
     }
   ]
 };
@@ -277,7 +300,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -301,7 +324,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -320,7 +343,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -333,7 +356,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
@@ -348,7 +371,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
