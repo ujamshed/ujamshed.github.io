@@ -23,7 +23,7 @@ const greeting = {
   username: "Usman Jamshed",
   title: "Hi, I'm Usman",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Software Developer 🚀 with experience building Scientific Software and Web Applications."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -190,28 +190,28 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "SOME OPEN SOURCE APPLICATIONS THAT I HELPED TO CREATE",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/KT_Logo.png"),
+      projectName: "Kotawân",
+      projectDesc: "A PORTAL TO ACCESS WILDLIFE AND ENVIRONMENTAL MONITORING DATA",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://www.kotawanportal.ca/"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/kraken.png"),
+      projectName: "kraken",
+      projectDesc: "Kolossal viRtual dAtabase for moleKular dEscriptors of orgaNophosphorus ligands",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://kraken.molssi.org"
         }
       ]
     }
