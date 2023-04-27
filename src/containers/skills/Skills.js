@@ -1,7 +1,8 @@
 import React, {useContext} from "react";
 import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import {illustration, skillsSection} from "../../portfolio";
+import SoftwareSkill2 from "../../components/softwareSkills/SoftwareSkill";
+import {illustration, skillsSection, skillsSection2} from "../../portfolio";
 import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
@@ -34,6 +35,49 @@ export default function Skills() {
             >
               {skillsSection.title}{" "}
             </h1>
+            <p
+              className={
+                isDark
+                  ? "dark-mode subTitle skills-text-subtitle"
+                  : "subTitle skills-text-subtitle"
+              }
+            >
+              {skillsSection2.subTitle}
+            </p>
+              <div>
+                <div className="software-skills-main-div">
+                  <ul className="dev-icons">
+                    {skillsSection2.softwareSkills.map((skills, i) => {
+                      return (
+                        <li
+                          key={i}
+                          className="software-skill-inline"
+                          name={skills.skillName}
+                        >
+                          <i className={skills.fontAwesomeClassname}></i>
+                          <p>{skills.skillName}</p>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              </div>
+            <div>
+              {skillsSection2.skills.map((skills, i) => {
+                return (
+                  <p
+                    key={i}
+                    className={
+                      isDark
+                        ? "dark-mode subTitle skills-text"
+                        : "subTitle skills-text"
+                    }
+                  >
+                    {skills}
+                  </p>
+                );
+              })}
+            </div>
             <p
               className={
                 isDark

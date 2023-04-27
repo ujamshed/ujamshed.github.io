@@ -43,16 +43,48 @@ const socialMediaLinks = {
 
 // Skills Section
 
-const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+const skillsSection2 = {
+  subTitle: "SCIENTIFIC SOFTWARE DEVELOPER",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Develop robust, scalable, optimized scientific software"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Creating software for downstream wet-lab teams to increase throughput"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Experienced in parallel programing paradigms and machine learning algorithms"
+    )
+  ],
+
+  /* Make Sure to include correct Font Awesome Classname to view your icon
+https://fontawesome.com/icons?d=gallery */
+
+  softwareSkills: [
+    {
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "aws",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
+const skillsSection = {
+  title: "What I do",
+  subTitle: "FULL STACK DEVELOPER",
+  skills: [
+    emoji(
+      "⚡ Develop highly interactive Front end / User Interfaces for your web applications"
+    ),
+    emoji("⚡ Experienced with creating RESTful APIs and relational / non-relational databases"),
+    emoji(
+      "⚡ Integration of third party services such as AWS / Docker"
     )
   ],
 
@@ -73,7 +105,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
+      skillName: "React.js",
       fontAwesomeClassname: "fab fa-react"
     },
     {
@@ -85,7 +117,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-npm"
     },
     {
-      skillName: "sql-database",
+      skillName: "Postgresql",
       fontAwesomeClassname: "fas fa-database"
     },
     {
@@ -99,7 +131,11 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
-    }
+    },
+    {
+      skillName: "MySQL",
+      fontAwesomeClassname: "fas fa-database"
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -381,6 +417,7 @@ export {
   greeting,
   socialMediaLinks,
   splashScreen,
+  skillsSection2,
   skillsSection,
   educationInfo,
   techStack,
